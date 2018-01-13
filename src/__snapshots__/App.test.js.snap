@@ -4,6 +4,28 @@ exports[`renders without crashing 1`] = `
 <div
   className="App"
 >
-  <Connect(Sample) />
+  <Container
+    tag="div"
+  >
+    <Row
+      tag="div"
+    >
+      <Col
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+        xs="12"
+      >
+        <Tabs />
+      </Col>
+    </Row>
+  </Container>
 </div>
 `;

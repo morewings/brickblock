@@ -1,7 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`src > components > Sample.js renders without crashing 1`] = `
-<div>
-   Tabs 
-</div>
+<React.Fragment>
+  <Nav
+    tabs={true}
+    tag="ul"
+    vertical={false}
+  >
+    <NavItem
+      tag="li"
+    >
+      <NavLink
+        className="active"
+        onClick={[Function]}
+        tag="a"
+      >
+        Tab1
+      </NavLink>
+    </NavItem>
+    <NavItem
+      tag="li"
+    >
+      <NavLink
+        className=""
+        onClick={[Function]}
+        tag="a"
+      >
+        Moar Tabs
+      </NavLink>
+    </NavItem>
+  </Nav>
+</React.Fragment>
 `;
