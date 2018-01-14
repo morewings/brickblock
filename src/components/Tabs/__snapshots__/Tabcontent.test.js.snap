@@ -9,7 +9,7 @@ exports[`components > Tabs > TabContent renders without crashing with \`props.ac
     tabId="tab1"
     tag="div"
   >
-    Tab 1
+    <Table />
   </TabPane>
   <TabPane
     tabId="tab2"
@@ -29,7 +29,7 @@ exports[`components > Tabs > TabContent renders without crashing with \`props.ac
     tabId="tab1"
     tag="div"
   >
-    Tab 1
+    <Table />
   </TabPane>
   <TabPane
     tabId="tab2"
