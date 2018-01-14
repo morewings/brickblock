@@ -1,6 +1,6 @@
 import {DATA} from 'Redux/constants';
 
-const initialState = {
+export const initialState = {
   ico: [],
   preIco: [],
 };

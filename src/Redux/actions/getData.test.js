@@ -4,7 +4,7 @@ import {DATA} from 'Redux/constants/';
 import {getData} from 'Redux/actions/getData';
 
 const payload = {
-  data: 'Some data',
+  data: 'No bullshit here',
 };
 
 axiosMock.onGet(config.dataUrl).reply(200, payload);
