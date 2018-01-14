@@ -5,8 +5,12 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import promiseMiddleware from 'redux-promise-middleware';
 import ReduxThunk from 'redux-thunk';
 import rootReducer from 'Redux/reducers';
-import App from 'App';
+import App from 'App.container';
 import 'main.css';
+
+import {getData} from 'Redux/actions/index';
+
+getData();
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // eslint-disable-line
 

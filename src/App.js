@@ -1,17 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'reactstrap';
 import Tabs from 'components/Tabs/Tabs';
 
-const App = props => (
-  <div className="App">
-    <Container>
-      <Row>
-        <Col xs="12">
-          <Tabs />
-        </Col>
-      </Row>
-    </Container>
-  </div>
-);
+export default class App extends React.Component {
+  componentDidMount() {
+    this.props.getData();
+  }
+  render() {
+    return (
+      <div className="App">
+        <Container>
+          <Row>
+            <Col xs="12">
+              <Tabs />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    );
+  }
+}
 
-export default App;
+App.propTypes = {
+  getData: PropTypes.func.isRequired,
+};

@@ -14,7 +14,7 @@ exports[`components > Tabs > TabNavigation renders without crashing 1`] = `
       onClick={[Function]}
       tag="a"
     >
-      Tab1
+      PreICO
     </NavLink>
   </NavItem>
   <NavItem
@@ -25,7 +25,7 @@ exports[`components > Tabs > TabNavigation renders without crashing 1`] = `
       onClick={[Function]}
       tag="a"
     >
-      Tab 2
+      ICO
     </NavLink>
   </NavItem>
 </Nav>
