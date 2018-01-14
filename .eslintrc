@@ -4,6 +4,7 @@
     "react-app"
   ],
   "rules": {
+    "react/no-array-index-key": 1,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-closing-bracket-location": [1, "after-props"],
     "import/prefer-default-export": 0,

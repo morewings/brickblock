@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Pages > Pages renders without crashing 1`] = `
+<Pagination
+  tag="ul"
+>
+  <PaginationItem
+    tag="li"
+  >
+    <PaginationLink
+      href="#"
+      previous={true}
+      tag="a"
+    />
+  </PaginationItem>
+  <PaginationItem
+    tag="li"
+  >
+    <PaginationLink
+      href="#"
+      tag="a"
+    >
+      1
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem
+    tag="li"
+  >
+    <PaginationLink
+      href="#"
+      tag="a"
+    >
+      2
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem
+    tag="li"
+  >
+    <PaginationLink
+      href="#"
+      tag="a"
+    >
+      3
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem
+    tag="li"
+  >
+    <PaginationLink
+      href="#"
+      tag="a"
+    >
+      4
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem
+    tag="li"
+  >
+    <PaginationLink
+      href="#"
+      tag="a"
+    >
+      5
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem
+    tag="li"
+  >
+    <PaginationLink
+      href="#"
+      next={true}
+      tag="a"
+    />
+  </PaginationItem>
+</Pagination>
+`;
