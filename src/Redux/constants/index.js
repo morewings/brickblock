@@ -1,5 +1,6 @@
-export const DATA = {
+export const CONTRIBUTORS = {
   GET: 'DATA.GET',
+  SET_VISIBLE: 'DATA.SET_VISIBLE',
 };
 
 export const PAGE = {

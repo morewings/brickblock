@@ -1,19 +1,28 @@
-import {DATA} from 'Redux/constants';
+import {lensPath, set, compose} from 'ramda';
+import {CONTRIBUTORS} from 'Redux/constants';
 
 export const initialState = {
-  ico: [],
-  preIco: [],
+  ico: {
+    raw: [],
+    visible: [],
+  },
+  preIco: {
+    raw: [],
+    visible: [],
+  },
 };
 
 const ContributorsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case `${DATA.GET}_FULFILLED`: {
+    case `${CONTRIBUTORS.GET}_FULFILLED`: {
       const {ico, preIco} = action.payload.data;
-      return {
-        ...state,
-        ico,
-        preIco,
-      };
+      const rawIcoLens = lensPath(['ico', 'raw']);
+      const rawPreIcoLens = lensPath(['preIco', 'raw']);
+      return compose(set(rawIcoLens, ico), set(rawPreIcoLens, preIco))(state);
+    }
+    case CONTRIBUTORS.SET_VISIBLE: {
+      const visibleLens = lensPath([action.dataSource, 'visible']);
+      return set(visibleLens, action.contributors, state);
     }
     default: {
       return state;
@@ -22,3 +31,4 @@ const ContributorsReducer = (state = initialState, action) => {
 };
 
 export default ContributorsReducer;
+

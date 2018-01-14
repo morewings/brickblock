@@ -5,7 +5,7 @@ import Pages from 'components/Pages/Pages';
 
 function mapStateToProps(state, props) {
   return {
-    dataLength: state.contributors[props.dataSource].length,
+    dataLength: state.contributors[props.dataSource].raw.length,
     currentPage: state.pagination[props.dataSource].page,
   };
 }

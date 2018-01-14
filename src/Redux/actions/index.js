@@ -1,2 +1,3 @@
 export {getData} from 'Redux/actions/getData';
-export {setCurrentPage} from 'Redux/actions/setCurrentPage';
+export {setVisibleDataThunk as setVisibleData} from 'Redux/actions/setVisibleData';
+export {setCurrentPageThunk as setCurrentPage} from 'Redux/actions/setCurrentPage';
