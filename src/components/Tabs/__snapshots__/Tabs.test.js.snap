@@ -2,33 +2,12 @@
 
 exports[`src > components > Sample.js renders without crashing 1`] = `
 <React.Fragment>
-  <Nav
-    tabs={true}
-    tag="ul"
-    vertical={false}
-  >
-    <NavItem
-      tag="li"
-    >
-      <NavLink
-        className="active"
-        onClick={[Function]}
-        tag="a"
-      >
-        Tab1
-      </NavLink>
-    </NavItem>
-    <NavItem
-      tag="li"
-    >
-      <NavLink
-        className=""
-        onClick={[Function]}
-        tag="a"
-      >
-        Moar Tabs
-      </NavLink>
-    </NavItem>
-  </Nav>
+  <TabNavigation
+    activeTab="tab1"
+    toggleTab={[Function]}
+  />
+  <TabContent
+    activeTab="tab1"
+  />
 </React.Fragment>
 `;

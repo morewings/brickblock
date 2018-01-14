@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Tabs > TabContent renders without crashing with \`props.activeTab === 'tab1'\` 1`] = `
+<TabContent
+  activeTab="tab1"
+  tag="div"
+>
+  <TabPane
+    tabId="tab1"
+    tag="div"
+  >
+    Tab 1
+  </TabPane>
+  <TabPane
+    tabId="tab2"
+    tag="div"
+  >
+    Tab 2
+  </TabPane>
+</TabContent>
+`;
+
+exports[`components > Tabs > TabContent renders without crashing with \`props.activeTab === 'tab2'\` 1`] = `
+<TabContent
+  activeTab="tab2"
+  tag="div"
+>
+  <TabPane
+    tabId="tab1"
+    tag="div"
+  >
+    Tab 1
+  </TabPane>
+  <TabPane
+    tabId="tab2"
+    tag="div"
+  >
+    Tab 2
+  </TabPane>
+</TabContent>
+`;

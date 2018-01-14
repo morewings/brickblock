@@ -1,33 +1,22 @@
 import React, {Fragment} from 'react';
-import classnames from 'classnames';
-import {TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
+import TabNavigation from 'components/Tabs/TabNavigation';
+import TabContent from 'components/Tabs/TabContent';
 
-export default class Tabs extends React.Component { // eslint-disable-line
-  toggleTab = (tab) => {
-    console.log(tab);
+export default class Tabs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeTab: 'tab1',
+    };
+  }
+  toggleTab = (activeTab) => {
+    this.setState({activeTab});
   };
   render() {
-    const createTabClassName = activeTab => classnames({
-      active: activeTab === 1,
-    });
     return (
       <Fragment>
-        <Nav tabs>
-          <NavItem>
-            <NavLink
-              className={createTabClassName(1)}
-              onClick={this.toggleTab}>
-              Tab1
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={createTabClassName(2)}
-              onClick={this.toggleTab}>
-              Moar Tabs
-            </NavLink>
-          </NavItem>
-        </Nav>
+        <TabNavigation toggleTab={this.toggleTab} activeTab={this.state.activeTab} />
+        <TabContent activeTab={this.state.activeTab} />
       </Fragment>
     );
   }

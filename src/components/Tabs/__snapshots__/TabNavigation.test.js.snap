@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Tabs > TabNavigation renders without crashing 1`] = `
+<Nav
+  tabs={true}
+  tag="ul"
+  vertical={false}
+>
+  <NavItem
+    tag="li"
+  >
+    <NavLink
+      className="active"
+      onClick={[Function]}
+      tag="a"
+    >
+      Tab1
+    </NavLink>
+  </NavItem>
+  <NavItem
+    tag="li"
+  >
+    <NavLink
+      className=""
+      onClick={[Function]}
+      tag="a"
+    >
+      Tab 2
+    </NavLink>
+  </NavItem>
+</Nav>
+`;
