@@ -27,4 +27,39 @@ describe('Redux > reducers > ContributorsReducer', () => {
       payload,
     })).toEqual(expectedState);
   });
+  it(`works properly with ${CONTRIBUTORS.SET_VISIBLE} action`, () => {
+    const payload = {
+      data: 'someData',
+    };
+    const expectedStatePreIco = {
+      ico: {
+        raw: [],
+        visible: [],
+      },
+      preIco: {
+        raw: [],
+        visible: payload,
+      },
+    };
+    const expectedStateIco = {
+      ico: {
+        raw: [],
+        visible: payload,
+      },
+      preIco: {
+        raw: [],
+        visible: [],
+      },
+    };
+    expect(ContributorsReducer(initialState, {
+      type: CONTRIBUTORS.SET_VISIBLE,
+      visibleData: payload,
+      dataSource: 'preIco',
+    })).toEqual(expectedStatePreIco);
+    expect(ContributorsReducer(initialState, {
+      type: CONTRIBUTORS.SET_VISIBLE,
+      visibleData: payload,
+      dataSource: 'ico',
+    })).toEqual(expectedStateIco);
+  });
 });

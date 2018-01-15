@@ -1,4 +1,4 @@
-import {lensPath, set, compose} from 'ramda';
+import {lensPath, set, compose, view} from 'ramda';
 import {CONTRIBUTORS} from 'Redux/constants';
 
 export const initialState = {
@@ -22,7 +22,7 @@ const ContributorsReducer = (state = initialState, action) => {
     }
     case CONTRIBUTORS.SET_VISIBLE: {
       const visibleLens = lensPath([action.dataSource, 'visible']);
-      return set(visibleLens, action.contributors, state);
+      return set(visibleLens, action.visibleData, state);
     }
     default: {
       return state;

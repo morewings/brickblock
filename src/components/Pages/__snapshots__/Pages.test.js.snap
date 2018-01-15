@@ -5,70 +5,63 @@ exports[`components > Pages > Pages renders without crashing 1`] = `
   tag="ul"
 >
   <PaginationItem
+    disabled={true}
     tag="li"
   >
     <PaginationLink
       href="#"
+      onClick={[Function]}
       previous={true}
       tag="a"
     />
   </PaginationItem>
   <PaginationItem
+    active={true}
+    key="page-0"
     tag="li"
   >
     <PaginationLink
       href="#"
+      onClick={[Function]}
       tag="a"
     >
       1
     </PaginationLink>
   </PaginationItem>
   <PaginationItem
+    active={false}
+    key="page-1"
     tag="li"
   >
     <PaginationLink
       href="#"
+      onClick={[Function]}
       tag="a"
     >
       2
     </PaginationLink>
   </PaginationItem>
   <PaginationItem
+    active={false}
+    key="page-2"
     tag="li"
   >
     <PaginationLink
       href="#"
+      onClick={[Function]}
       tag="a"
     >
       3
     </PaginationLink>
   </PaginationItem>
   <PaginationItem
-    tag="li"
-  >
-    <PaginationLink
-      href="#"
-      tag="a"
-    >
-      4
-    </PaginationLink>
-  </PaginationItem>
-  <PaginationItem
-    tag="li"
-  >
-    <PaginationLink
-      href="#"
-      tag="a"
-    >
-      5
-    </PaginationLink>
-  </PaginationItem>
-  <PaginationItem
+    disabled={false}
     tag="li"
   >
     <PaginationLink
       href="#"
       next={true}
+      onClick={[Function]}
       tag="a"
     />
   </PaginationItem>
