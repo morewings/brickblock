@@ -23,7 +23,11 @@ exports[`App renders without crashing 1`] = `
         }
         xs="12"
       >
-        <Tabs />
+        <div
+          className="contributors"
+        >
+          <Tabs />
+        </div>
       </Col>
     </Row>
   </Container>

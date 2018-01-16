@@ -1,0 +1,30 @@
+@import "./../../mixins.scss";
+@import "./../../variables.scss";
+
+.table{
+  margin: $marginVertical 0 $marginVertical;
+  tr{
+    td{
+      font-size: .75rem;
+    }
+  }
+}
+
+.table{
+  tr{
+    td{
+      @include textRegular;
+      font-size: .75rem;
+    }
+  }
+}
+
+.table{
+  thead{
+    tr{
+      th{
+        @include textBold;
+      }
+    }
+  }
+}

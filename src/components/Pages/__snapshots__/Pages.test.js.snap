@@ -42,19 +42,6 @@ exports[`components > Pages > Pages renders without crashing 1`] = `
     </PaginationLink>
   </PaginationItem>
   <PaginationItem
-    active={false}
-    key="page-2"
-    tag="li"
-  >
-    <PaginationLink
-      href="#"
-      onClick={[Function]}
-      tag="a"
-    >
-      3
-    </PaginationLink>
-  </PaginationItem>
-  <PaginationItem
     disabled={false}
     tag="li"
   >

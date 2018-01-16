@@ -1,6 +1,6 @@
 const config = Object.freeze({
   dataUrl: 'https://blockchain-ico.brickblock.io/inputs',
-  itemsPerPage: 100,
+  itemsPerPage: 166,
   defaultTab: 'preIco',
 });
 

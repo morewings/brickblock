@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'reactstrap';
 import Tabs from 'components/Tabs/Tabs';
+import './App.css';
 
 export default class App extends React.Component {
   componentDidMount() {
@@ -13,7 +14,9 @@ export default class App extends React.Component {
         <Container>
           <Row>
             <Col xs="12">
-              <Tabs />
+              <div className="contributors">
+                <Tabs />
+              </div>
             </Col>
           </Row>
         </Container>

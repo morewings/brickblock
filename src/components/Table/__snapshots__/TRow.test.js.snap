@@ -2,9 +2,9 @@
 
 exports[`components > Table > TRow renders without crashing 1`] = `
 <tr>
-  <th>
+  <td>
     address
-  </th>
+  </td>
   <td>
     currency
   </td>

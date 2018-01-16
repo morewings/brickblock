@@ -2,6 +2,9 @@
 
 exports[`components > Table > Table renders without crashing 1`] = `
 <Table
+  bordered={true}
+  hover={true}
+  responsive={true}
   responsiveTag="div"
   tag="table"
 >

@@ -1,1 +1,28 @@
+@import "font.scss";
+$body-bg: rgba(51, 57, 74, 1);
+$body-color: rgba(16, 21, 48, 1);
+$link-color: rgba(56, 102, 255, 1);
+
+$pagination-bg: rgba(246, 247, 251, 1);
+$pagination-disabled-bg: rgba(222, 222, 222, 1);
+$pagination-border-color: $link-color;
+$pagination-disabled-border-color: $link-color;
+$pagination-hover-color: white;
+$pagination-hover-bg: $link-color;
+$pagination-hover-border-color: $link-color;
+$pagination-active-bg: $link-color;
+$pagination-active-border-color:  $link-color;
+
+$nav-tabs-border-color:             rgba(234, 235, 237, 1);
+$nav-tabs-link-active-color:        white;
+
+
+$font-size-base: .9375rem;
+$font-family-sans-serif: 'GTCinetype-Light', sans-serif;
+$headings-margin-bottom: 0;
+$headings-font-family: 'Rubik-Regular', sans-serif;
+$headings-font-weight: 400;
+$headings-line-height: 1;
+$h1-font-size: 2.125rem;
+
 @import 'bootstrap/scss/bootstrap.scss';

@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import config from 'config';
 import TabNavigation from 'components/Tabs/TabNavigation';
 import TabContent from 'components/Tabs/TabContent';
+import './Tabs.css';
 
 export default class Tabs extends React.Component {
   constructor(props) {

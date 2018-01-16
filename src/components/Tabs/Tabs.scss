@@ -1,0 +1,15 @@
+@import "./../../variables.scss";
+
+.contributors{
+  .tab-pane {
+    padding-top: $marginVertical;
+  }
+}
+
+.contributors{
+  .nav-tabs .nav-link{
+    &.active:hover{
+      color: white;
+    }
+  }
+}

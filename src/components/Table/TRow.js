@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const TRow = props => (
   <tr>
-    <th>{props.address}</th>
+    <td>{props.address}</td>
     <td>{props.currency}</td>
     <td>{props.value}</td>
     <td>{props.txid}</td>

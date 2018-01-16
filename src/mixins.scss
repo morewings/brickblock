@@ -1,0 +1,10 @@
+// Typography
+@mixin textBold() {
+  font-family: 'GTCinetype-Bold', sans-serif;
+  font-weight: 700;
+}
+
+@mixin textRegular() {
+  font-family: 'GTCinetype-Regular', sans-serif;
+  font-weight: 400;
+}
