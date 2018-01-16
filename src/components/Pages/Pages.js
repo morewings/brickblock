@@ -5,7 +5,6 @@ import config from 'config';
 
 const Pages = (props) => {
   const pagesAmount = Math.ceil(props.dataLength / config.itemsPerPage);
-  const pagesTemplate = new Array(pagesAmount).fill('');
   const onClick = page => (e) => {
     e.preventDefault();
     props.setCurrentPage(page, props.dataSource);
@@ -18,7 +17,7 @@ const Pages = (props) => {
           previous
           href="#" />
       </PaginationItem>
-      {pagesTemplate.map((empty, i) => (
+      {new Array(pagesAmount).fill('').map((empty, i) => (
         <PaginationItem
           active={props.currentPage === (i + 1)}
           key={`page-${i}`}>
