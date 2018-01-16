@@ -7,8 +7,17 @@ import TBody from 'components/Table/TBody';
 const Table = props => (
   <TableComponent>
     <THead />
-    <TBody />
+    <TBody content={props.content} />
   </TableComponent>
 );
+
+Table.propTypes = {
+  content: PropTypes.arrayOf(PropTypes.shape({
+    address: PropTypes.string,
+    currency: PropTypes.string,
+    value: PropTypes.number,
+    txid: PropTypes.string,
+  })).isRequired,
+};
 
 export default Table;

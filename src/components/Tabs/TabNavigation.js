@@ -14,15 +14,15 @@ const TabNavigation = (props) => {
     <Nav tabs>
       <NavItem>
         <NavLink
-          className={createTabClassName('tab1')}
-          onClick={onClick('tab1')}>
+          className={createTabClassName('preIco')}
+          onClick={onClick('preIco')}>
           PreICO
         </NavLink>
       </NavItem>
       <NavItem>
         <NavLink
-          className={createTabClassName('tab2')}
-          onClick={onClick('tab2')}>
+          className={createTabClassName('ico')}
+          onClick={onClick('ico')}>
           ICO
         </NavLink>
       </NavItem>

@@ -1,29 +1,37 @@
+import {slice} from 'ramda';
 import ContributorsReducer, {initialState} from 'Redux/reducers/ContributorsReducer';
+import config from 'config';
 import {CONTRIBUTORS} from 'Redux/constants';
+import {contributorsMock} from '__mocks__/dataMocks';
 
 describe('Redux > reducers > ContributorsReducer', () => {
   it('returns initial state by default', () => {
     expect(ContributorsReducer(initialState, 'make me covfefe')).toEqual(initialState);
   });
-  it(`works properly with ${CONTRIBUTORS.GET}_FULFILLED action`, () => {
+  it(`sets 'raw' data and populates 'visible' on ${CONTRIBUTORS.GET}_FULFILLED action`, () => {
+    const itemsPerPage = 10;
     const payload = {
       data: {
-        ico: ['Wealthy dude'],
-        preIco: ['Even wealthier dude'],
+        ico: contributorsMock,
+        preIco: contributorsMock,
       },
     };
     const expectedState = {
       ico: {
         raw: payload.data.ico,
-        visible: [],
+        visible: slice(0, itemsPerPage, contributorsMock),
       },
       preIco: {
         raw: payload.data.preIco,
-        visible: [],
+        visible: slice(0, itemsPerPage, contributorsMock),
       },
     };
     expect(ContributorsReducer(initialState, {
       type: `${CONTRIBUTORS.GET}_FULFILLED`,
+      meta: {
+        defaultTab: config.defaultTab,
+        itemsPerPage,
+      },
       payload,
     })).toEqual(expectedState);
   });

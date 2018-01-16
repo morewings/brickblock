@@ -1,6 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import toJson from 'enzyme-to-json';
+import config from 'config';
 import TabNavigation from 'components/Tabs/TabNavigation';
 import {NavLink} from 'reactstrap';
 
@@ -8,7 +9,7 @@ const toggleTab = jest.fn();
 
 const defaultProps = {
   toggleTab,
-  activeTab: 'tab1',
+  activeTab: config.defaultTab,
 };
 
 describe('components > Tabs > TabNavigation', () => {
@@ -21,7 +22,7 @@ describe('components > Tabs > TabNavigation', () => {
   });
   it('calls `props.toggleTab` on tab link click with `tabId` as an argument', () => {
     const wrapper = shallow(<TabNavigation {...defaultProps} />);
-    const tabIds = ['tab1', 'tab2'];
+    const tabIds = [config.defaultTab, 'ico'];
     const nav1 = wrapper.find(NavLink).first();
     const nav2 = wrapper.find(NavLink).last();
     nav1.simulate('click');

@@ -1,6 +1,6 @@
 import {curry} from 'ramda';
 import {PAGE} from 'Redux/constants/';
-import {setVisibleData} from 'Redux/actions';
+import {setVisibleDataThunk as setVisibleData} from 'Redux/actions/setVisibleData';
 
 export const setCurrentPage = (page, dataSource) => ({
   type: PAGE.SET,

@@ -6,19 +6,26 @@ exports[`components > Tabs > TabContent renders without crashing with \`props.ac
   tag="div"
 >
   <TabPane
-    tabId="tab1"
+    tabId="preIco"
     tag="div"
   >
-    <Table />
+    <Connect(Table)
+      dataSource="preIco"
+    />
     <Connect(Pages)
       dataSource="preIco"
     />
   </TabPane>
   <TabPane
-    tabId="tab2"
+    tabId="ico"
     tag="div"
   >
-    Tab 2
+    <Connect(Table)
+      dataSource="ico"
+    />
+    <Connect(Pages)
+      dataSource="ico"
+    />
   </TabPane>
 </TabContent>
 `;
@@ -29,19 +36,26 @@ exports[`components > Tabs > TabContent renders without crashing with \`props.ac
   tag="div"
 >
   <TabPane
-    tabId="tab1"
+    tabId="preIco"
     tag="div"
   >
-    <Table />
+    <Connect(Table)
+      dataSource="preIco"
+    />
     <Connect(Pages)
       dataSource="preIco"
     />
   </TabPane>
   <TabPane
-    tabId="tab2"
+    tabId="ico"
     tag="div"
   >
-    Tab 2
+    <Connect(Table)
+      dataSource="ico"
+    />
+    <Connect(Pages)
+      dataSource="ico"
+    />
   </TabPane>
 </TabContent>
 `;

@@ -3,11 +3,11 @@
 exports[`src > components > Sample.js renders without crashing 1`] = `
 <React.Fragment>
   <TabNavigation
-    activeTab="tab1"
+    activeTab="preIco"
     toggleTab={[Function]}
   />
   <TabContent
-    activeTab="tab1"
+    activeTab="preIco"
   />
 </React.Fragment>
 `;

@@ -4,16 +4,16 @@ exports[`components > Table > THead renders without crashing 1`] = `
 <thead>
   <tr>
     <th>
-      #
+      Address
     </th>
     <th>
-      First Name
+      Currency
     </th>
     <th>
-      Last Name
+      Value
     </th>
     <th>
-      Username
+      TXID
     </th>
   </tr>
 </thead>

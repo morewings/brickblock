@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 const THead = props => (
   <thead>
     <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
+      <th>Address</th>
+      <th>Currency</th>
+      <th>Value</th>
+      <th>TXID</th>
     </tr>
   </thead>
 );

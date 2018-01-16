@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import config from 'config';
 import TabNavigation from 'components/Tabs/TabNavigation';
 import TabContent from 'components/Tabs/TabContent';
 
@@ -6,7 +7,7 @@ export default class Tabs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTab: 'tab1',
+      activeTab: config.defaultTab,
     };
   }
   toggleTab = (activeTab) => {

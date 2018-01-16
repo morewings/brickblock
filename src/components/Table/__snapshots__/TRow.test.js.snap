@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components > Table > TRow renders without crashing 1`] = `
+<tr>
+  <th>
+    address
+  </th>
+  <td>
+    currency
+  </td>
+  <td>
+    9000
+  </td>
+  <td>
+    txid
+  </td>
+</tr>
+`;

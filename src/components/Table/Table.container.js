@@ -3,8 +3,10 @@ import {bindActionCreators} from 'redux';
 import {getData} from 'Redux/actions/index';
 import Table from 'components/Table/Table';
 
-const mapStateToProps = () => ({});
+const mapStateToProps = (state, props) => ({
+  content: state.contributors[props.dataSource].visible,
+});
 
-const mapDispatchToProps = dispatch => bindActionCreators({getData}, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Table);
